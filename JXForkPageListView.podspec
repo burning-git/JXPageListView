@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "JXForkPageListView"
-  spec.version      = "0.0.2"
+  spec.version      = "0.0.3"
   spec.summary      = "A short description of JXForkPageListView."
 
   # This description is used to generate tags and improve search results.
@@ -89,10 +89,11 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "Classes", "Classes/PageListView/*.{h,m}"
-  spec.exclude_files = "Classes/PageListView"
+  spec.source_files  = "PageListView", "Sources/PageListView/*.{h,m}"
 
   spec.platform     = :ios, "8.0"
+  spec.requires_arc = true
+
   # spec.public_header_files = "Classes/**/*.h"
 
 
